@@ -1,0 +1,18 @@
+/*Autor: Pedro Luis*/
+
+/*VARIABLE. Ejemplo:colorcito */
+:root {
+	--colorcito: green;
+}
+
+body {
+	background: var(
+		--colorcito
+	); /*a backgroun le asignamos la variable colorcito*/
+	margin: 10px;
+}
+
+h1 {
+	background: white;
+	color: var(--colorcito);
+}

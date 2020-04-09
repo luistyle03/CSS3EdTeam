@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>CSS desde cero</title>
+		<!--se recomienda aqui poner la hoja de estilos no al final porque
+        sino se cargara primero el html y luego la hoja de estilos lo que siginifica
+    que por un instante podria verse la pagina sin ningun estilo, osea se veria
+horrible-->
+		<link rel="stylesheet" href="styles.css" />
+		<!--
+            2da Forma: NO RECOMENDABLE, ya que si alguno de los
+            estilos no recarga no regara los demas
+            <style>
+            @import url("styles.css");
+            @import url("styles2.css");
+        </style>-->
+
+		<!--3ra FORMA: para demostraciones rapidas de CSS, mas
+            no para un desarrollo profesional de un sitio web
+		<style>
+			body {
+				background: red;
+				color: white;
+			}
+		</style>-->
+	</head>
+	<body>
+		<h1>CSS desde cero</h1>
+	</body>
+	<!--4 FORMA: No recomendada porque el mantenimiento es dificil
+        Ejemplo si quieres cambiar el color a todos los h1 tendrias
+        que ir control por control cambiandolo(ES INEFICIENTE)
+	<body style="background: green;">
+		<h1 style="color: white;">CSS desde cero</h1>
+	</body>-->
+</html>
