@@ -1,0 +1,28 @@
+
+/*RECOMENDACION NUNCA USAR SELECTOR UNIVERSAL YA QUE NO
+HAY REGLAS MUY BIEN DEFINIDAS PARA ESTE SELECTOR*/
+/*
+Dar propiedades a todos los elementos html
+* {
+	color: red;
+}*/
+
+/*Da estilos a todos los elementos contenidos dentro de ul*/
+ul * {
+	/*color: red;*/
+	display: none;/*Oculta*/
+}
+
+/*Deberia mostrar el elemento span pero no lo hace a pesar de que
+el span esta dentro del elemeto li y este llama a la clase ocultando*/
+.ocultando {
+	display: block;/*muestra el control*/
+}
+
+
+
+/*si descomentamos el siguiente codigo y comentamos .ocultando
+igual el span no se veria ya que el elemento li esta oculto
+span {
+	display: block;
+}
