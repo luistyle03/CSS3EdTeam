@@ -1,0 +1,21 @@
+.titulo {
+	background: red;
+	color: white;
+}
+
+.parrafo {
+	background: green;
+	color: white;
+}
+
+.negrita {
+	font-weight: bold;
+}
+.centrar {
+	text-align: center;
+}
+
+.😒 {
+	background: blue;
+	color: white;
+}
