@@ -31,6 +31,6 @@ ul span {
 
 /*significa controles html ul que tienen la clase .lista (se quitan los espacios 
 entre el control y la clase) */
-ul .lista2 {
+ul.lista2 {
 	color: yellowgreen;
 }
