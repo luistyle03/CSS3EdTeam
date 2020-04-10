@@ -1,0 +1,15 @@
+/*
+ul li {
+	display: none;
+}
+*/
+
+li > ul {
+	/*Todo ul que se hijo directo de li(no nieto bisnieto, etc). En resumen se selecciona solo los subitems*/
+	display: none;
+}
+
+li:hover ul {
+	/*pseudoclase hoover es un evento que se dispara cuando se pasa el mouse por encima del elemento*/
+	display: block;
+}
