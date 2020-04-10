@@ -1,0 +1,36 @@
+body {
+	font-size: 2em;
+}
+
+/*
+Selector descendiente: poner su arbol genealogico para seleccionar un elemento se
+enumeran con espacios en blanco
+
+.lista .item { (significa que seleccione los que tienen la clase .lista-item y
+    que son hijos de .lista)
+    En realidad no tiene sentido ya que simplemente con .lista-item es suficiente:
+    .item {
+	color: red;
+}
+
+/*
+elemento html span que tiene como antecesor ul (ul puede ser padre, abuelo, bisabuelo, etc etc)*/
+ul span {
+	color: red;
+}
+
+/*clase .tag que tiene como antecesor la clase .lista (.lista puede ser padre, abuelo, bisabuelo, etc etc)*/
+.lista .tag {
+	color: green;
+}
+
+/*significa controles html que tienen las 2 clases juntas(se quitan los espacios entre las clases) */
+.spancito.tagcito {
+	color: blue;
+}
+
+/*significa controles html ul que tienen la clase .lista (se quitan los espacios 
+entre el control y la clase) */
+ul .lista2 {
+	color: yellowgreen;
+}

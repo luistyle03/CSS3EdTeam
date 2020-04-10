@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1>SELECTORES DESCENDIENTES</h1>
+
+		<ul class="lista">
+			<li class="item">Item1</li>
+			<li class="item">
+				Item2
+				<span>solo es un span: ul span {</span>
+			</li>
+			<li class="item">
+				Item3
+				<span class="tag"
+					>span con clase tag y ul con clase lista: .lista .tag {
+				</span>
+			</li>
+			<li class="item">
+				Item4
+				<span class="spancito tagcito"
+					>span con clase lista Y tag: .spancito.tagcito {</span
+				>
+			</li>
+		</ul>
+
+		<br />
+
+		<p>Lista 2</p>
+		<ul class="lista2">
+			<li class="item2">Item1</li>
+			<li class="item2">Item2</li>
+		</ul>
+		<br /><br />
+		<p>
+			OJO:Para cambiar de color a TODOS los items de un listado NO es necesario
+			selector descendiente por clase(.milista .miitem), simplemente llamar
+			directamente al selector de clase del item por ejemplo: .miitem
+		</p>
+	</body>
+</html>
