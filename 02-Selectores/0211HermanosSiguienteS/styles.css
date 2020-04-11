@@ -1,0 +1,35 @@
+/*Seleccionara todo aquel control cuyo clase sea .hermano y cuyos hermanos anteriores
+sean de clase .hermano-mayor
+Hermano 1 no cumple ya que no tiene clase .hermano
+Hermano 2 si cumple ya que tiene clase .hermano y 2 hermanos mas arriba o anteriores esta el control con clase .hermano-mayor
+Hermano 3 no cumple ya que no tiene clase .hermano
+Hermano 4 si cumple ya que tiene clase .hermano y 4 hermanos mas arriba o anteriores esta el control con clase .hermano-mayor
+...
+*/
+.hermano-mayor ~ .hermano {
+	background-color: yellow;
+}
+
+/*Actua como si fuera un inicializador, el parrafo siempre on esta visible
+ya que el checkbox no esta marcado*/
+.enabled {
+	display: none;
+}
+
+/*
+Buscara un control con clase .enabled y cuyos hermanos anteriores tengan una clase
+llamada check y que ademas este marcada(:checked). Esto simularia que cada vez que se
+marque la casilla(.check:checked) el parrafo Activo se mostrara (display:block)
+*/
+.check:checked ~ .enabled {
+	display: block;
+}
+
+/*
+Buscara un control con clase .disabled y cuyos hermanos anteriores tengan una clase
+llamada check y que ademas este marcada(:checked). Esto simularia que cada vez que se
+marque la casilla(.check:checked) el parrafo Desactivado se ocultara (display:none)
+*/
+.check:checked ~ .disabled {
+	display: none;
+}
