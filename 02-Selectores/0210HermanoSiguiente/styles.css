@@ -1,0 +1,45 @@
+:root {
+	--color-title: red;
+	--color-subtitle: blue;
+}
+
+/*
+.titulo1 {
+	color: var(--color-title);
+}
+
+.titulo2 {
+	color: var(--color-subtitle);
+}*/
+
+.subtitulo {
+	font-size: 0.5em;
+	margin-top: -2em;
+}
+/*
+Elementos o clases cuyo hermano pegado anterior sea otro elemento o clase. (Hermano pegado
+anterior se refiere a un elemento html que esta inmediatemente antes a dicho elemento, osea pegado a el;
+ y que comparten un mismo padre)
+elemento1 + elemento2    o   .clase1 + .clase2
+
+Ejemplo
+Elemento con clase .subtitulo que tenga un hermano anterior pegado que sea un elemento con clase .titulo1
+Solo cumplen esta condicion los elementos Subitulo1 y Subtitulo2
+*/
+.titulo1 + .subtitulo {
+	color: var(--color-title);
+}
+
+.titulo2 + .subtitulo {
+	color: var(--color-subtitle);
+}
+
+/*
+Elementos h2 cuyo hermano pegado anterior sea h1
+Titulo 20 no cumple ya que no tiene un hermano pegado anterior h1, solo tiene un parrafo anterior (subtitulo2)
+Subititutlo20.1 si cumple ya que tiene un hermano pegado anterior h1 (titulo20)
+Otro subtitulo2009 no cumple ya que tiene un hermano anterior pegaddo que es un parrafo(...) 
+*/
+h1 + h2 {
+	color: green;
+}
